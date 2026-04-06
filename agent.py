@@ -1,7 +1,6 @@
 import os
 from langchain_community.llms import Ollama
 from langchain_core.tools import tool
-from langchain.memory import ConversationBufferMemory
 
 @tool
 def nvd_cve_lookup(cve_id: str) -> str:
